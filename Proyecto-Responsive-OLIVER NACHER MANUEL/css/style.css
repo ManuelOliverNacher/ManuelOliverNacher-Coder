@@ -1,0 +1,776 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+
+/* Mobile First */
+body{
+    font-family: "Roboto", sans-serif;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto;
+    grid-template-areas: "header" "main" "footer";
+
+}
+
+
+.main{
+grid-area: main;
+}
+
+/* Estilo del Header*/
+
+.header{
+    grid-area: header;
+    box-shadow: 0 0 3px #000;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+   
+}  
+header ul {
+    justify-content: space-evenly;
+    position: relative;
+    top:-2rem;
+    
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 5em;
+    width: 100%;
+}
+.nav-class{
+    flex-direction: column;
+}
+.nav-class li a{
+    font-size: 22px;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+    justify-content: center;
+}
+
+header li{
+    list-style: none;
+    transition: 0.3s ease-out;
+}
+
+header ul li a:hover{
+    color: yellow;
+}
+
+header li a{
+    color: #000;
+    text-decoration: none;
+    transition:.3s ease;
+}
+
+
+#Contacto a {
+    color: #000;
+    background-color: yellow;
+    border-radius: 40px;
+    padding: 0.5em;
+    transition: 0.3s ease-out;
+}
+
+#Contacto a:hover {
+    color: #fff;
+    
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    
+
+}
+.imagen{
+    width: 100%;
+	height: auto;
+    margin-top: 45px;
+    
+}
+
+/* Main Home*/
+.ofrecemos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 3em;
+}
+section h1{
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+.titulo-medio{
+    font-size: 25px;
+}
+.row-home{
+    justify-content: center;
+    display: grid;
+    gap: 1em;
+    margin-top: 20px;
+}
+.ofrecemos-col1{
+    margin-top: 10px;
+    flex-basis: 27%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    
+}
+.ofrecemos-col2{
+    margin-top: 10px;
+    flex-basis: 27%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    
+}
+.ofrecemos-col3{
+    margin-top: 10px;
+    flex-basis: 27%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    
+    
+}
+
+.ofrecemos-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    }
+    section h3{
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    section p{
+        font-size: 26px;
+    }
+    
+    section a{
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 20px;
+          text-decoration: none;
+          color: #3498db;
+    }
+    /* Estilo del Footer*/
+    footer{
+        color: #fff;
+        margin: auto;
+        box-shadow: 0 0 3px #000;
+        text-align: center;
+        width: 100%;
+        grid-area: footer;
+        height: auto;
+        display: grid;
+
+    }
+    .footer-container{
+        display: flex;
+        justify-content: space-around;
+        padding: 1em 0;
+        display: grid; 
+    } 
+    footer ul li{
+        list-style: none;   
+    }
+    .footer-heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    } 
+    .footer-heading a{
+        color: black;
+        text-decoration: none;
+        font-size: 24px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        
+    }
+    .footer-heading a:hover{
+        color: yellow;
+        transition: 0.3s ease-out;
+    }
+    footer h4{
+        font-size: 16px;
+        color: black;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        font-weight: 500;
+        position:relative;
+    
+    }
+    footer h4::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color:rgb(238, 255, 0);
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+    
+    /* Estilo del boton de enviar*/
+    #footer-email{
+        width: 350px;
+        height: 40px;
+        border-radius: 4px;
+        outline: none;
+        border: none;
+        padding-left: 0.5rem;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 0%;
+        background-color: #f1f1f1;
+    }
+    #footer-email::placeholder{
+        color:darkgrey;
+    }
+    #footer-email-btn{
+        width: 100px;
+        height: 40px;
+        background-color: yellow;
+        border-radius: 30px;
+        
+    }
+    #footer-email-btn:hover{
+        cursor: pointer;
+        background-color: #f1f1f1;
+        transition: all 0.4s ease-out;
+    }
+    footer h4{
+        font-size: 26px;
+    }
+     /* Estilo de Contacto*/
+     .content{
+        max-width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1.5em;
+        box-sizing: border-box;
+         
+     }
+     ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .logo {
+        text-align: center;
+        font-size: 3em;
+        margin-top: 20px;
+    }
+    
+    .logo span {
+        color: #f2f608;
+    }
+    
+    .contact-wrapper {
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+        margin-top: 20px;
+    }
+    
+    .contact-wrapper > * {
+        padding: 1em;
+        margin-top: 20px;
+        gap: 1;
+    }
+    
+    .contact-form {
+        background: #fff;
+       
+    }
+    
+    .contact-form form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    
+    .contact-form form label {
+        display: block;
+        
+    }
+    
+    .contact-form form p {
+        margin: 0;
+        padding: 1em;
+    }
+    
+    .contact-form form .block {
+        grid-column: 1 / 3;
+    }
+    
+    .contact-form form button,
+    .contact-form form input,
+    .contact-form form textarea {
+        width: 100%;
+        padding: .7em;
+        border: none;
+        background: none;
+        outline: 0;
+        color: rgb(0, 0, 0);
+        border-bottom: 1px solid #f3ef00;
+    }
+    
+    .contact-form form button {
+        background: #fbff00;
+        border: 0;
+        text-transform: uppercase;
+        padding: 1em;
+    }
+    
+    .contact-form form button:hover,
+    .contact-form form button:focus {
+        background: #fbff00;
+        color: #fff;
+        transition: background-color 1s ease-out;
+        outline: 0;
+        cursor: pointer;
+    }
+    
+    /* CONTACT INFO */
+    .contact-info {
+        background: rgb(255, 255, 255);
+    }
+    
+    .contact-info h4, .contact-info ul, .contact-info p {
+        text-align: center;
+        margin: 0 0 1rem 0;
+        list-style: none;
+    }
+    .contact-info ul li{
+        padding: .3em;
+    }
+
+
+
+
+    
+    /* Estilo de Productos*/
+    main h2{
+        text-align: center;
+        height: auto;
+        margin: auto;
+        border-style: solid 4px ;
+        padding: 20px 30px;
+         margin-top: 25px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .container-card{
+        box-sizing: border-box;
+        max-width: 1200px;
+        display: grid;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 19px;
+        justify-content: space-around;
+        flex-wrap: wrap; 
+        
+       
+    }
+    .container-card .card{
+        width: 330px;
+        border-radius: 8px;
+        box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        margin: 35px;
+        text-align: center;
+        transition: all 0.25s;
+        height: 410px;
+    
+    }
+    .container-card .card:hover{
+       transform: translate(-15px);
+       box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    }
+    .container-card .card img{
+        width: 270px;
+        height: 280px;
+    }
+    .container-card .card h4{
+        font-weight: 600;
+    }
+    .container-card .card p{
+      padding: 0 1rem;
+      font-size: 16px;
+      font-weight: 400;
+    }
+      .container-card .card a{
+          font-weight: 500;
+          text-decoration: none;
+          color: #3498db;
+      }
+      /* Termina el estila de Productos*/
+
+
+
+      /* Estilo de Sale*/
+  .container-card-sale{
+    box-sizing: border-box;
+    max-width: 1200px;
+    display: grid;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 19px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container-card-sale .card-sale{
+    width: 330px;
+    border-radius: 8px;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 35px;
+    text-align: center;
+    transition: all 0.25s;
+    height: 410px;
+}
+.container-card-sale .card-sale:hover{
+    transform: translate(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.container-card-sale .card-sale h4{
+    font-weight: 600px;
+}
+.container-card-sale .card-sale p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 400;
+}
+.container-card-sale .card-sale a {
+    font-weight: 500;
+      text-decoration: none;
+      color: #3498db;
+}
+.container-card-sale .card-sale img{
+    width: 250px;
+    height: 280px;
+}
+
+ /*Termina el estila de sale*/
+
+  /*empieza el estilo de Nosotros*/
+
+
+ .gran-contenedor-flex {
+    display:flex;
+    padding: 3em;
+    gap:2em;
+    justify-items:center;
+  }
+  
+  .imagen-nosotros {
+    width: 400px;
+    height: 400px;
+    
+  }
+  
+  .imagen-nosotros img {
+    width: 100%
+  }
+  .texto {
+    width:70%;  
+    font-size:110%;
+    
+  }
+  .texto h3 {
+    margin-bottom:1.5em;
+  }
+  .texto2{
+      margin-top: 20px;
+  }
+  .btn-nosotros{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: yellow;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    margin-top: 30px;
+    display: block;
+    
+    
+  }
+  .btn-nosotros:hover{
+    background: #e39403;
+  }
+
+
+
+
+
+
+
+
+ 
+
+ 
+/* LARGE SIZE CONTACT US */
+@media(min-width: 700px) {
+    
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        box-sizing: border-box;
+        
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
+    }
+    
+
+    }
+
+    @media screen and (min-width: 764px){
+        
+        .contenedor--displaygrid{
+            display: grid;
+            grid-template-columns: 100%  ;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: "header header" "main main" "footer footer" ;
+        }
+        .header{
+            height: 16vh;
+            display: flex;
+            align-items: center;
+            margin-bottom:-2rem;
+        }
+        header ul {
+            top:-1rem;
+        }
+        
+        nav {
+            justify-content: space-between;   
+        }
+        .nav-class{
+            flex-direction: row;
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+         }
+         .nav-class a {
+             font-weight: 400;
+             margin-bottom: -20px;
+         }
+         .nav-class li a{
+            font-size: 18px;
+        }
+        .logo-lemom{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        .row-home{
+            display: flex;
+        }
+        .ofrecemos-col1{
+            box-shadow: none;
+        }
+        .ofrecemos-col2{
+            box-shadow: none;
+        }
+        .ofrecemos-col3{
+            box-shadow: none;
+        }
+        
+        .ofrecemos-col1:hover{
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        }
+        .ofrecemos-col2:hover{
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            }
+            .ofrecemos-col3:hover{
+                box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+                cursor: pointer;
+                }
+                section h1{
+                    font-size: 26px;
+                }
+                .titulo-medio{
+                    font-size: 17px;
+                    margin-top: -10px;
+                    
+                }
+                section h3{
+                    font-size: 20px;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                section p{
+                    font-weight: 300;
+                   line-height: 22px;
+                    font-size: 15px;
+                    margin-top: 10px;
+                }
+                
+                section a{
+                    margin-top: 20px;
+                    font-weight: 500;
+                    font-size: 15px;
+                      text-decoration: none;
+                      color: #3498db;
+                }
+                footer{
+                    background-color:#fff;
+                    color: #fff;
+                    margin: auto;
+                    box-shadow: 0 0 3px #000;
+                    text-align: center;
+                    position: sticky;
+                    width: 100%;
+                    margin-top: 160px;
+                
+                }
+                .footer-container{
+                    display: flex;
+                }  
+            
+                .footer-heading a{
+                    font-size: 14px;
+                }
+                
+                footer h4{
+                    font-size: 16px
+                }
+       }
+       
+
+       /* PRODUCTOS */
+       @media screen and (max-width: 799px){
+        .contenedor--displaygrid{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto ;
+            grid-template-areas: "header" "main" "footer" ;
+        }
+        .container-card{
+            display: grid;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+             
+           
+        }
+       }
+
+       /* SALE */
+
+       @media screen and (max-width: 799px) {
+        .contenedor--displaygrid{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto ;
+            grid-template-areas: "header" "main" "footer" ;
+        }
+        .container-card-sale{
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+       }
+       @media screen and (max-width: 800px) {
+        .container-card-sale{
+            max-width: 1200px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-left: auto;
+            margin-right: auto;
+
+       }
+    }
+       /* NOSOTROS */
+       @media screen and (max-width:763px) {
+        .gran-contenedor-flex {
+            display:flex;
+            flex-direction: column;
+            padding: 3em;
+            gap:2em;
+            justify-content: center;
+            align-items: center;
+          }
+          .imagen-nosotros {
+            width: 280px;
+            height: 300px;
+            
+          }
+          
+          .texto {
+            width:60%;  
+            font-size:110%;
+            
+          }
+          .texto h3 {
+            margin-bottom:1.5em;
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+          }
+          .texto2{
+              margin-top: 30px;
+          }
+          .btn-nosotros{
+
+            margin-left: auto;
+            margin-right: auto;
+          }
+       }
+       @media screen and (max-width:444px) {
+        .texto {
+            width: 65%;  
+            font-size:130%;
+          }
+          .texto h3 {
+            margin-bottom:1.5em;
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+            font-size: 1.5em;
+          }
+          .texto2{
+              margin-top: 30px;
+          }
+           
+       }
+       
+    
+
+       
